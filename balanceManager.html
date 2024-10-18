@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balance Calculator</title>
+    <link rel="stylesheet" href="balanceManager.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Balance Calculator</h1>
+
+      <div>
+        <label for="initialAmount">Available Amount: €</label>
+        <input
+          id="initialAmount"
+          type="number"
+          placeholder="Enter your available amount"
+        />
+      </div>
+      <hr class="divider" />
+      <div class="label-row">
+        <div style="flex: 1; margin-right: 5px">
+          <label for="item">Item: </label>
+          <input id="item" type="text" placeholder="Item name" />
+        </div>
+        <div style="flex: 1; margin-left: 5px">
+          <label for="price">Price: €</label>
+          <input id="price" type="number" placeholder="Price" />
+        </div>
+      </div>
+
+      <button id="addButton" class="addButton">Add Item</button>
+
+      <ul id="itemList"></ul>
+
+      <button id="calcButton" class="calcButton">Calculate Balance</button>
+
+      <p id="balanceResult"></p>
+    </div>
+
+    <script src="balanceManager.js"></script>
+  </body>
+</html>
